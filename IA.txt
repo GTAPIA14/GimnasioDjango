@@ -1,0 +1,43 @@
+(entorno)
+-- mkdir GimnasioDjango
+-- cd GimnasioDjango
+-- python -m venv venv
+-- .\venv\Scripts\Activate.ps1
+-- python -m pip install django
+-- python -m pip freeze > requirements.txt
+-- django-admin startproject config .
+-- python manage.py startapp gimnasio
+
+(bd inicial)
+-- python manage.py migrate
+-- python manage.py check
+-- python manage.py createsuperuser
+-- python manage.py runserver
+http://127.0.0.1:8000/admin/
+
+(gitignore)
+venv/
+pycache/
+*.py[cod]
+.env
+.idea/
+.vscode/
+
+(primer commit)
+-- git init
+-- git add .
+-- git status
+-- git commit -m "Commit 1: Proyecto Django y admin instalado"
+-- git config --global user.name "Tu nombre"
+-- git config --global user.email "tu-correo@example.com"
+-- git log -1 --oneline
+
+(migraciones)
+
+#hacer un prompt en models.py
+-- python manage.py makemigrations gimnasio
+-- python manage.py migrate
+-- python manage.py check
+#hacer un prompt en gimnasio/admin.py
+
+
